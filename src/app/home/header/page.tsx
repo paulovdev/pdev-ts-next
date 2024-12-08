@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { FaLinkedin, FaTwitter, FaGithub } from "react-icons/fa";
 import { VscVerifiedFilled } from "react-icons/vsc";
 import { IoIosArrowUp } from "react-icons/io";
+import Image from 'next/image';
 
 import "./homeHeader.scss";
 
@@ -14,7 +15,7 @@ export default function HomeHeader() {
         <div className="home-header" >
             <div className="profile-content">
                 <div className="l-content">
-                    <img src="/photo.webp" alt="profile-photo" />
+                    <Image src="/photo.webp" width={125} height={125} alt="profile-photo" />
                 </div>
                 <div className="r-content">
                     <h1>Paulo Vitor <VscVerifiedFilled /></h1>

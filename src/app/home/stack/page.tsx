@@ -57,7 +57,7 @@ export default function HomeStack() {
                     <li key={index}>
                         <div className="l-content">
                             <div className="icon-content">
-                                <img src={stack.img} alt="icon" />
+                                <Image src={stack.img} width={stack.width} height={stack.height} alt="icon" />
                             </div>
                         </div>
                         <div className="r-content">
