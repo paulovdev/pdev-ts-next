@@ -1,7 +1,9 @@
+
 import { GoArrowLeft } from "react-icons/go";
 import Link from "next/link";
 
 import "./blogPost.scss";
+import { MotionSection } from "@/components/motion";
 
 interface Blog {
     id: number
@@ -52,7 +54,7 @@ const miniBlogs: Blog[] = [
 ];
 
 
-export default async function BlogPost({ params }: BlogIdQuery) {
+export default async function BlogServer({ params }: BlogIdQuery) {
     const { blogId } = await params
 
     if (!blogId) {
@@ -66,7 +68,12 @@ export default async function BlogPost({ params }: BlogIdQuery) {
     }
 
     return (
-        <section id="blog-post">
+        <MotionSection
+            id="blog-post"
+            initial={{ opacity: 0, filter: "blur(15px)" }}
+            animate={{ opacity: 1, filter: "blur(0px)" }}
+            exit={{ opacity: 0, filter: "blur(15px)" }}
+            transition={{ duration: 0.5, ease: "easeInOut" }}>
 
             <div className="back-to-blogs">
                 <Link href="/blog"><GoArrowLeft />Blogs</Link>
@@ -77,6 +84,6 @@ export default async function BlogPost({ params }: BlogIdQuery) {
                 <p key={index}>{paragraph}</p>
             ))}
 
-        </section>
+        </MotionSection>
     );
 };

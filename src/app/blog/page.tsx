@@ -1,4 +1,4 @@
-
+import { MotionSection } from "@/components/motion";
 import Link from 'next/link';
 import "./blog.scss"
 
@@ -29,7 +29,11 @@ const miniBlogs: Blog[] = [
 
 export default function Blog() {
   return (
-    <section id="blog">
+    <MotionSection id="blog"
+    initial={{ opacity: 0, filter: "blur(15px)" }}
+    animate={{ opacity: 1, filter: "blur(0px)" }}
+    exit={{ opacity: 0, filter: "blur(15px)" }}
+    transition={{ duration: 0.5, ease: "easeInOut" }}>
       <h1>Blog</h1>
       <p>Unlocking the secrets of success: Stories, strategies, and motivation.</p>
 
@@ -41,6 +45,6 @@ export default function Blog() {
           </Link>
         ))}
       </div>
-    </section>
+    </MotionSection>
   );
 }

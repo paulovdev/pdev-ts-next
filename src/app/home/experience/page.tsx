@@ -1,3 +1,5 @@
+import { MotionDiv } from '@/components/motion'
+
 import { FaBuilding, FaGraduationCap } from 'react-icons/fa';
 import { TbBabyCarriageFilled } from 'react-icons/tb';
 
@@ -37,7 +39,17 @@ const HomeExperience = () => {
     ];
 
     return (
-        <div className="home-experience"
+        <MotionDiv className="home-experience"
+        initial={{ opacity: 0 }}
+        whileInView={{
+            opacity: 1,
+            transition: {
+                duration: 0.5,
+                delay: 0.3,
+                ease: [0.455, 0.03, 0.515, 0.955]
+            }
+        }}
+        viewport={{ once: true }}
         >
             <h1>Experience</h1>
             <p>My experiences since I started studying programming</p>
@@ -58,7 +70,7 @@ const HomeExperience = () => {
                 ))}
                 <div className="end"><TbBabyCarriageFilled size={18} /> Born in 2003</div>
             </div>
-        </div>
+        </MotionDiv >
     );
 }
 

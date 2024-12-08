@@ -1,5 +1,7 @@
-import "./stack.scss"
+import { MotionDiv } from '@/components/motion'
 import Image from 'next/image';
+
+import "./stack.scss"
 
 export default function HomeStack() {
 
@@ -49,7 +51,18 @@ export default function HomeStack() {
     ];
 
     return (
-        <div className="home-stack">
+        <MotionDiv className="home-stack"
+            initial={{ opacity: 0 }}
+            whileInView={{
+                opacity: 1,
+                transition: {
+                    duration: 0.5,
+                    delay: 0.3,
+                    ease: [0.455, 0.03, 0.515, 0.955]
+                }
+            }}
+            viewport={{ once: true }}
+        >
             <h1>Stack</h1>
             <p>Tools that I always use in almost all of my work</p>
             <ul>
@@ -67,6 +80,6 @@ export default function HomeStack() {
                     </li>
                 ))}
             </ul>
-        </div>
+        </MotionDiv>
     )
 }

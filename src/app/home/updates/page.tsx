@@ -1,11 +1,23 @@
+import { MotionDiv } from '@/components/motion'
 import { BiBook, BiMusic } from 'react-icons/bi';
 import { MdOutlineMovie } from 'react-icons/md';
 
 import "./updates.scss";
 
-const HomeUpdates = () => {
+
+export default function HomeUpdates() {
     return (
-        <div className="home-updates">
+        <MotionDiv className="home-updates"
+            initial={{ opacity: 0 }}
+            whileInView={{
+                opacity: 1,
+                transition: {
+                    duration: 0.5,
+                    delay: 0.3,
+                    ease: [0.455, 0.03, 0.515, 0.955]
+                }
+            }}
+            viewport={{ once: true }}>
             <h1>Updates</h1>
             <p>What am I doing at the moment besides studying ;)</p>
             <ul>
@@ -30,8 +42,6 @@ const HomeUpdates = () => {
 
             </ul>
 
-        </div >
+        </MotionDiv >
     );
 }
-
-export default HomeUpdates;

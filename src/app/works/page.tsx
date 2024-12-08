@@ -1,6 +1,6 @@
-'use client';
-
+"use client"
 import React, { useState } from 'react';
+import { MotionSection } from '@/components/motion'
 import Image from 'next/image';
 import { CgClose } from 'react-icons/cg';
 import { GoLinkExternal } from "react-icons/go";
@@ -113,7 +113,11 @@ export default function Works() {
     };
 
     return (
-        <section id='works'>
+        <MotionSection id='works'
+        initial={{ opacity: 0, filter: "blur(15px)" }}
+        animate={{ opacity: 1, filter: "blur(0px)" }}
+        exit={{ opacity: 0, filter: "blur(15px)" }}
+        transition={{ duration: 0.5, ease: "easeInOut" }}>
             <h1>My Works</h1>
             <p>Explore my portfolio of projects spanning from 2021 to 2024.</p>
 
@@ -145,6 +149,7 @@ export default function Works() {
                     <p>No works found matching your search criteria.</p>
                 )}
             </div>
-        </section>
+            
+        </MotionSection>
     );
 }

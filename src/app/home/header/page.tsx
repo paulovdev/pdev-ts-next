@@ -1,6 +1,7 @@
 "use client"
-
+import { MotionDiv, AnimatePresenceDiv } from '@/components/motion'
 import { useState } from 'react';
+import { motion } from 'framer-motion'
 import { FaLinkedin, FaTwitter, FaGithub } from "react-icons/fa";
 import { VscVerifiedFilled } from "react-icons/vsc";
 import { IoIosArrowUp } from "react-icons/io";
@@ -12,7 +13,12 @@ export default function HomeHeader() {
     const [showMoreAbout, setShowMoreAbout] = useState(false);
 
     return (
-        <div className="home-header" >
+        <MotionDiv className="home-header"
+            initial={{ opacity: 0, filter: "blur(15px)" }}
+            animate={{ opacity: 1, filter: "blur(0px)" }}
+            exit={{ opacity: 0, filter: "blur(15px)" }}
+            transition={{ duration: 0.5, ease: "easeInOut" }}
+        >
             <div className="profile-content">
                 <div className="l-content">
                     <Image src="/photo.webp" width={125} height={125} alt="profile-photo" />
@@ -49,20 +55,27 @@ export default function HomeHeader() {
                     Front-end developer & UX/UI design, specializing in creating immersive and intuitive user experiences, consistently pushing the boundaries of design innovation.
                 </h2>
 
-                {showMoreAbout && (
-                    <div className="modal-more-about">
-                        <p>As we talked about, I'm a front-end developer passionate about music and games. In addition to creating amazing interfaces for the web, I also dedicate my free time to producing music and exploring the world of games.</p>
+                <AnimatePresenceDiv>
+                    {showMoreAbout && (
+                        <MotionDiv className="modal-more-about"
+                            initial={{ opacity: 0, y: -10, filter: "blur(15px)" }}
+                            animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+                            exit={{ opacity: 0, y: -10, filter: "blur(15px)" }}
+                            transition={{ duration: 0.3, ease: "easeInOut" }}
+                        >
+                            <p>As we talked about, I'm a front-end developer passionate about music and games. In addition to creating amazing interfaces for the web, I also dedicate my free time to producing music and exploring the world of games.</p>
 
-                        <p>I love working on challenging projects and diving into long, engaging texts. My creativity and technical skills allow me to create unique and engaging digital experiences for users. I always seek to improve my skills and stay up to date with the latest trends in the world of web development.</p>
+                            <p>I love working on challenging projects and diving into long, engaging texts. My creativity and technical skills allow me to create unique and engaging digital experiences for users. I always seek to improve my skills and stay up to date with the latest trends in the world of web development.</p>
 
-                        <span>Paulo Vitor Pimentel dos Santos</span>
-                    </div>
-                )}
+                            <span>Paulo Vitor Pimentel dos Santos</span>
+                        </MotionDiv>
+                    )}
+                </AnimatePresenceDiv>
 
                 <button onClick={() => setShowMoreAbout(!showMoreAbout)} className={!showMoreAbout ? "active" : ""}>
                     More about me <IoIosArrowUp />
                 </button>
             </div>
-        </div>
+        </MotionDiv>
     );
 }

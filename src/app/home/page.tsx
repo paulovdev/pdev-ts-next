@@ -1,12 +1,11 @@
 import HomeExperience from "./experience/page";
 import HomeHeader from "./header/page";
-
 import HomeStack from "./stack/page";
 import HomeWorks from "./works/page";
 import HomeSetup from "./setup/page"
+import HomeUpdates from "./updates/page";
 
 import "./home.scss"
-import HomeUpdates from "./updates/page";
 
 export default function HomePage() {
     return (

@@ -1,3 +1,4 @@
+import { MotionDiv } from '@/components/motion'
 import { GoLinkExternal } from "react-icons/go";
 import Image from 'next/image';
 
@@ -11,7 +12,7 @@ export default function HomeWorks() {
             title: "Quimplo",
             description: "Quimplo is a marketplace website for selling templates.",
             src: "https://quimplo.online",
-            width: 250, 
+            width: 250,
             height: 300
         },
         {
@@ -35,7 +36,18 @@ export default function HomeWorks() {
     ];
 
     return (
-        <div className="home-works">
+        <MotionDiv className="home-works"
+            initial={{ opacity: 0 }}
+            whileInView={{
+                opacity: 1,
+                transition: {
+                    duration: 0.5,
+                    delay: 0.3,
+                    ease: [0.455, 0.03, 0.515, 0.955]
+                }
+            }}
+            viewport={{ once: true }}
+        >
             <h1>Recent works</h1>
             <p>Explore my recent works, and the ones I'm still working on</p>
             <div className="works-container">
@@ -52,6 +64,6 @@ export default function HomeWorks() {
                     </a>
                 ))}
             </div>
-        </div>
+        </MotionDiv>
     );
 }

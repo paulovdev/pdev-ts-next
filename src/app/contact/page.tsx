@@ -1,10 +1,14 @@
-'use client'
-import './contact.scss';
+import { MotionSection } from "@/components/motion";
 import { MdEmail, MdPhone } from 'react-icons/md';
+import './contact.scss';
 
 export default function Contact() {
     return (
-        <section id='contact'>
+        <MotionSection id='contact'
+        initial={{ opacity: 0, filter: "blur(15px)" }}
+        animate={{ opacity: 1, filter: "blur(0px)" }}
+        exit={{ opacity: 0, filter: "blur(15px)" }}
+        transition={{ duration: 0.5, ease: "easeInOut" }}>
             <h1>Get in touch.</h1>
             <p>Got an idea for a website or mobile app, or need some tips on product design? Don't hesitate to get in touch. My schedule fills up fast, so the earlier you reach out, the better for both of us. </p>
             <div className="contact-links">
@@ -21,7 +25,7 @@ export default function Contact() {
 
             </form>
             <h2>Avg. response: <span>24 hours</span></h2>
-        </section>
+        </MotionSection>
     );
 }
 
