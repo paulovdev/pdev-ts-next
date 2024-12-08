@@ -1,0 +1,284 @@
+.home-experience {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+
+    h1 {
+        margin-bottom: .5rem;
+
+        font-size: 2rem;
+        font-weight: 600;
+
+        letter-spacing: -.5px;
+        line-height: 1;
+
+        color: var(--p);
+
+    }
+
+    p {
+        margin-bottom: 2rem;
+
+        font-size: 1.1rem;
+        font-weight: 500;
+
+        letter-spacing: -.5px;
+        line-height: 1.2;
+
+        color: var(--p-3);
+
+    }
+
+    .timeline {
+        position: relative;
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        .timeline-line {
+            position: absolute;
+            width: 2px;
+            height: 95%;
+
+            top: 30px;
+            bottom: 0;
+            left: 50%;
+
+            background-color: var(--border);
+
+            overflow: hidden;
+
+            z-index: 0;
+        }
+
+        .timeline-item {
+            position: relative;
+            width: 100%;
+
+            margin-bottom: 5rem;
+
+            display: flex;
+            align-items: start;
+            justify-content: space-between;
+
+            .timeline-year {
+                position: relative;
+
+                width: fit-content;
+
+                top: 10px;
+
+                padding: .5rem 1.5rem;
+
+                font-size: .85rem;
+                font-weight: 400;
+
+                color: var(--p);
+
+                background-color: var(--bg-2);
+                border-radius: 1rem;
+
+                text-align: center;
+            }
+
+
+            .timeline-icon {
+                position: absolute;
+                width: 50px;
+                height: 50px;
+
+                top: 0;
+                bottom: 0;
+                left: 50%;
+
+                border-radius: 1rem;
+                background-color: var(--bg-3);
+                color: var(--p);
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                transform: translateX(-50%);
+                z-index: 2;
+
+                svg {
+                    color: var(--p-2);
+                    font-size: 24px;
+                }
+            }
+
+            .timeline-card {
+                position: relative;
+                width: calc(35% + 15px);
+                height: fit-content;
+
+                bottom: 10px;
+
+                padding: 1rem;
+
+                background-color: var(--bg-2);
+                border-radius: 2rem;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+
+                text-align: center;
+
+                h1 {
+                    color: var(--p);
+                    font-size: 1rem;
+                    margin-bottom: 0.5rem;
+
+                    display: flex;
+                    align-items: start;
+                    gap: 0.1rem;
+
+                    span {
+                        font-size: 1rem;
+                    }
+                }
+
+                p {
+                    margin: 0;
+                    font-size: .8rem;
+                    color: var(--p-3);
+                }
+            }
+        }
+    }
+
+    .end {
+        position: relative;
+
+        width: fit-content;
+        height: 40px;
+
+
+
+        padding: .8rem 1rem .8rem .8rem;
+
+        font-size: .8rem;
+        font-weight: 600;
+
+        color: var(--p);
+
+        background-color: var(--bg-2);
+        border-radius: 2rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: .8rem;
+
+        svg {
+            color: var(--p);
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .home-experience {
+        position: relative;
+        width: 100%;
+
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        flex-direction: column;
+
+        .timeline {
+            position: relative;
+            width: 100%;
+
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            .timeline-line {
+                position: absolute;
+                width: 2px;
+
+
+                top: 30px;
+                bottom: 0;
+                left: 50%;
+
+                background-color: var(--border);
+
+                overflow: hidden;
+
+                z-index: 0;
+            }
+
+            .timeline-item {
+                position: relative;
+                width: 100%;
+
+                margin-bottom: 5rem;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                gap: 1rem;
+
+                .timeline-year {
+                    position: relative;
+
+                    width: fit-content;
+
+                    top: 0;
+
+                    padding: .5rem 1rem;
+
+                    font-size: .8rem;
+                    font-weight: 400;
+
+                    color: var(--p);
+
+                    background-color: var(--bg-2);
+                    border-radius: 1rem;
+
+                    text-align: center;
+                }
+
+
+                .timeline-icon {
+                    position: relative;
+                    width: 50px;
+                    height: 50px;
+
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+
+                    border-radius: 1rem;
+                    background-color: var(--bg-3);
+                    color: var(--p);
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    transform: translateX(0);
+                    z-index: 2;
+
+                }
+
+                .timeline-card {
+                    width: calc(50% + 15px);
+                    bottom: 0;
+
+                }
+            }
+        }
+    }
+}

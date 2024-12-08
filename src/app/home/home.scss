@@ -1,0 +1,22 @@
+#home {
+    position: relative;
+    max-width: 500px;
+    width: 100%;
+
+    margin: 0 auto;
+    padding: 15px 15px 200px 15px;
+
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+
+
+}
+
+@media (max-width:768px) {
+    #hero {
+        margin: 2vh auto;
+    }
+
+}

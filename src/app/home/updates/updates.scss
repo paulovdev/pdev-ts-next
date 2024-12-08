@@ -1,0 +1,122 @@
+.home-updates {
+    position: relative;
+    width: 100%;
+
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+
+    h1 {
+        margin-bottom: .5rem;
+
+        font-size: 2rem;
+        font-weight: 600;
+
+        letter-spacing: -.5px;
+        line-height: 1;
+
+        color: var(--p);
+
+    }
+
+    p {
+        margin-bottom: 2rem;
+
+        font-size: 1.1rem;
+        font-weight: 500;
+
+        letter-spacing: -.5px;
+        line-height: 1.2;
+
+        color: var(--p-3);
+
+    }
+
+    ul {
+        position: relative;
+        width: 100%;
+
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+
+        li {
+            width: 100%;
+
+            margin-bottom: 1rem;
+
+            span {
+                width: 100%;
+
+                margin-bottom: 1rem;
+
+                font-size: .9rem;
+                font-weight: 400;
+
+                letter-spacing: -.5px;
+                line-height: 1.3;
+
+                color: var(--p-3);
+
+                display: flex;
+                align-items: center;
+                gap: .5rem;
+
+                .icon {
+                    width: 30px;
+                    height: 30px;
+
+                    padding: .1rem;
+
+                    border-radius: 100%;
+                    border: 1px solid var(--border);
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    svg {
+                        font-size: 14px;
+                        color: var(--p);
+                    }
+                }
+            }
+
+            .card-update {
+                position: relative;
+
+                width: 100%;
+                height: fit-content;
+
+                padding: 1.2rem;
+
+                border-radius: 1.5rem;
+                background-color: var(--bg-2);
+
+                p {
+                    margin: 0;
+
+                    font-size: 1rem;
+                    font-weight: 400;
+
+                    letter-spacing: -.2px;
+                    line-height: 1.3;
+
+                    color: var(--p);
+                }
+
+            }
+
+            iframe {
+                position: relative;
+                width: 100%;
+
+                margin-top: 1rem;
+
+                border: 1px solid transparent;
+                border-radius: 1rem;
+            }
+        }
+    }
+}
