@@ -1,7 +1,6 @@
 "use client"
 import { MotionDiv, AnimatePresenceDiv } from '@/components/motion'
 import { useState } from 'react';
-import { motion } from 'framer-motion'
 import { FaLinkedin, FaTwitter, FaGithub } from "react-icons/fa";
 import { VscVerifiedFilled } from "react-icons/vsc";
 import { IoIosArrowUp } from "react-icons/io";

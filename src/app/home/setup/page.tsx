@@ -1,8 +1,8 @@
-"use client"
+"use client";
 
 import { useState, useRef, useLayoutEffect } from 'react';
 import { IoIosArrowDown } from "react-icons/io";
-import { MotionDiv, MotionButton } from '@/components/motion'
+import { MotionDiv, MotionButton } from '@/components/motion';
 
 import './setup.scss';
 
@@ -19,7 +19,7 @@ export default function HomeSetup() {
                 right: 0
             });
         }
-    }, [containerRef.current]);
+    }, []);
 
     const setupItems = [
         { title: 'Processor', description: 'Intel Core i7-12700K, 3.6GHz, 12-core, 20-threads', category: 'Components' },
@@ -52,25 +52,25 @@ export default function HomeSetup() {
     };
 
     return (
-    <MotionDiv
-        className="home-setup"
-        initial={{ opacity: 0 }}
-        whileInView={{
-            opacity: 1,
-            transition: {
-                duration: 0.5,
-                delay: 0.3,
-                ease: [0.455, 0.03, 0.515, 0.955]
-            }
-        }}
-        viewport={{ once: true }}
-    >
-        <div className="home-setup-sticky">
-            <h1>Setup</h1>
-            <p>Here you will find the main equipment I use in my setup.</p>
-        </div>
+        <MotionDiv
+            className="home-setup"
+            initial={{ opacity: 0 }}
+            whileInView={{
+                opacity: 1,
+                transition: {
+                    duration: 0.5,
+                    delay: 0.3,
+                    ease: [0.455, 0.03, 0.515, 0.955]
+                }
+            }}
+            viewport={{ once: true }}
+        >
+            <div className="home-setup-sticky">
+                <h1>Setup</h1>
+                <p>Here you will find the main equipment I use in my setup.</p>
+            </div>
 
-        <div className="categories-container" ref={containerRef}>
+            <div className="categories-container" ref={containerRef}>
                 <MotionDiv
                     className="categories"
                     drag="x"
@@ -89,23 +89,22 @@ export default function HomeSetup() {
                 </MotionDiv>
             </div>
 
-        <ul>
-            {setupItems
-                .filter(item => selectedCategory === 'All' || item.category === selectedCategory)
-                .slice(0, visibleItems)
-                .map((item, index) => (
-                    <li key={index}>
-                        <strong>{item.title} <span>{item.category}</span></strong>
-                        <p>{item.description}</p>
-                    </li>
-                ))}
-        </ul>
-        {visibleItems < setupItems.length && (
-            <div className="show-more">
-                <button onClick={showMoreItems}><IoIosArrowDown />Show more</button>
-            </div>
-        )}
-    </MotionDiv>
+            <ul>
+                {setupItems
+                    .filter(item => selectedCategory === 'All' || item.category === selectedCategory)
+                    .slice(0, visibleItems)
+                    .map((item, index) => (
+                        <li key={index}>
+                            <strong>{item.title} <span>{item.category}</span></strong>
+                            <p>{item.description}</p>
+                        </li>
+                    ))}
+            </ul>
+            {visibleItems < setupItems.length && (
+                <div className="show-more">
+                    <button onClick={showMoreItems}><IoIosArrowDown />Show more</button>
+                </div>
+            )}
+        </MotionDiv>
     );
-};
-
+}
