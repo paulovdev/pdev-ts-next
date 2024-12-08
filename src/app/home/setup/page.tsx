@@ -9,7 +9,7 @@ import './setup.scss';
 export default function HomeSetup() {
     const [selectedCategory, setSelectedCategory] = useState('All');
     const [visibleItems, setVisibleItems] = useState(5);
-    const containerRef = useRef(null);
+    const containerRef = useRef<HTMLDivElement>(null);
     const [constraints, setConstraints] = useState({ left: 0, right: 0 });
 
     useLayoutEffect(() => {
