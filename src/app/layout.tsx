@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { ThemeProvider } from "@/context/ThemeContext";
-import Image from "next/image";
 import TopNav from "@/components/topNav/page";
 import Nav from "@/components/nav/page";
 
