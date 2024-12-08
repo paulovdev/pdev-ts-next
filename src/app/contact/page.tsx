@@ -1,3 +1,5 @@
+"use client"
+
 import { MotionSection } from "@/components/motion";
 import { MdEmail, MdPhone } from 'react-icons/md';
 import './contact.scss';

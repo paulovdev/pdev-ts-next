@@ -1,4 +1,6 @@
 "use client"
+
+
 import { MotionDiv, AnimatePresenceDiv } from '@/components/motion'
 import { useState } from 'react';
 import { FaLinkedin, FaTwitter, FaGithub } from "react-icons/fa";
