@@ -1,36 +1,50 @@
 import "./stack.scss"
+import Image from 'next/image';
+
 export default function HomeStack() {
 
     const stacks = [
         {
             img: "/stacks/react.png",
             title: "React",
-            subTitle: "JavaScript UI library"
+            subTitle: "JavaScript UI library",
+            width: 40,
+            height: 40
         },
         {
             img: "/stacks/firebase.png",
             title: "Firebase",
-            subTitle: "Google app platform"
+            subTitle: "Google app platform",
+            width: 40,
+            height: 40
         },
         {
             img: "/stacks/notion.png",
             title: "Notion",
-            subTitle: "All-in-one workspace"
+            subTitle: "All-in-one workspace",
+            width: 40,
+            height: 40
         },
         {
             img: "/stacks/figma.png",
             title: "Figma",
-            subTitle: "Design platform"
+            subTitle: "Design platform",
+            width: 40,
+            height: 40
         },
         {
             img: "/stacks/vs-code.png",
             title: "VS Code",
-            subTitle: "Code editor"
+            subTitle: "Code editor",
+            width: 40,
+            height: 40
         },
         {
             img: "/stacks/chat-gpt.png",
             title: "Open AI",
-            subTitle: "AI-powered language"
+            subTitle: "AI-powered language",
+            width: 40,
+            height: 40
         },
     ];
 

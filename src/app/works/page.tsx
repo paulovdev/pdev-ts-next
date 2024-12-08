@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import Image from 'next/image';
 import { CgClose } from 'react-icons/cg';
 import { GoLinkExternal } from "react-icons/go";
 
@@ -15,70 +16,90 @@ export default function Works() {
             imgSrc: "/works/work-1.webp",
             title: "Quimplo",
             description: "Quimplo is a marketplace website for selling templates.",
-            src: "https://quimplo.online"
+            src: "https://quimplo.online",
+            width: 250,
+            height: 300
         },
         {
             id: 2,
             imgSrc: "/works/work-2.webp",
             title: "Paulin",
             description: "Paulin is a simple minimal portfolio website.",
-            src: "https://post-and-publish.netlify.app/"
+            src: "https://post-and-publish.netlify.app/",
+            width: 250,
+            height: 300
         },
         {
             id: 3,
             imgSrc: "/works/work-3.webp",
             title: "paulovdev",
             description: "paulovdev is a full portfolio website.",
-            src: "https://paulovdev.framer.website/"
+            src: "https://paulovdev.framer.website/",
+            width: 250,
+            height: 300
         },
         {
             id: 4,
             imgSrc: "/works/work-4.webp",
             title: "The Batman",
             description: "ShopEase is an e-commerce platform for easy online shopping.",
-            src: "https://shopease.example.com"
+            src: "https://shopease.example.com",
+            width: 250,
+            height: 300
         },
         {
             id: 5,
             imgSrc: "/works/work-5.webp",
             title: "Meow Café",
             description: "DevPortfolio is a sleek and modern portfolio for developers.",
-            src: "https://devportfolio.example.com"
+            src: "https://devportfolio.example.com",
+            width: 250,
+            height: 300
         },
         {
             id: 6,
-            imgSrc: "https://images.unsplash.com/photo-1485470733090-0aae1788d5af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1517&q=80",
+            imgSrc: "/works/work-3.webp",
             title: "Coming soon",
             description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed omnis velit suscipit est praesentium sint error nihil eum eveniet.",
-            src: "https://creativehub.example.com"
+            src: "https://creativehub.example.com",
+            width: 250,
+            height: 300
         },
         {
             id: 7,
-            imgSrc: "https://images.unsplash.com/photo-1485470733090-0aae1788d5af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1517&q=80",
+            imgSrc: "/works/work-3.webp",
             title: "Coming soon",
             description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed omnis velit suscipit est praesentium sint error nihil eum eveniet.",
-            src: "https://eduplatform.example.com"
+            src: "https://eduplatform.example.com",
+            width: 250,
+            height: 300
         },
         {
             id: 8,
-            imgSrc: "https://images.unsplash.com/photo-1485470733090-0aae1788d5af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1517&q=80",
+            imgSrc: "/works/work-3.webp",
             title: "Coming soon",
             description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed omnis velit suscipit est praesentium sint error nihil eum eveniet.",
-            src: "https://healthcarepro.example.com"
+            src: "https://healthcarepro.example.com",
+            width: 250,
+            height: 300
         },
         {
             id: 9,
-            imgSrc: "https://images.unsplash.com/photo-1485470733090-0aae1788d5af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1517&q=80",
+            imgSrc: "/works/work-3.webp",
             title: "Coming soon",
             description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed omnis velit suscipit est praesentium sint error nihil eum eveniet.",
-            src: "https://travelbuddy.example.com"
+            src: "https://travelbuddy.example.com",
+            width: 250,
+            height: 300
         },
         {
             id: 10,
-            imgSrc: "https://images.unsplash.com/photo-1485470733090-0aae1788d5af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1517&q=80",
+            imgSrc: "/works/work-3.webp",
             title: "Coming soon",
             description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed omnis velit suscipit est praesentium sint error nihil eum eveniet.",
-            src: "https://artgallery.example.com"
+            src: "https://artgallery.example.com",
+            width: 250,
+            height: 300
         }
     ];
 
@@ -111,7 +132,7 @@ export default function Works() {
                     filteredWorks.map(work => (
                         <a href={work.src} target="_blank" className="w-content" key={work.id}>
                             <div className="img-content">
-                                <img src={work.imgSrc} alt={work.title} />
+                                <Image src={work.imgSrc} alt={work.title} width={work.width} height={work.height} />
                             </div>
                             <h1>{work.title}</h1>
                             <p>{work.description}</p>

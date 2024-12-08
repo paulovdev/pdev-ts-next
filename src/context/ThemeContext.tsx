@@ -1,5 +1,3 @@
-// context/ThemeContext.tsx
-
 "use client";
 
 import { createContext, useContext, useEffect, useState } from "react";
@@ -16,24 +14,39 @@ interface ThemeProviderProps {
 }
 
 export const ThemeProvider = ({ children }: ThemeProviderProps) => {
-    const getInitialTheme = () => {
-        const selectedTheme = localStorage.getItem("theme");
-        if (selectedTheme) {
-            return selectedTheme;
-        }
-        return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
-    };
 
-    const [theme, setTheme] = useState<string>(getInitialTheme);
+    const [theme, setTheme] = useState<string>("light");
+    const [isClient, setIsClient] = useState<boolean>(false);
 
     useEffect(() => {
-        document.body.className = theme;
-    }, [theme]);
+        const getInitialTheme = (): string => {
+            const selectedTheme = localStorage.getItem("theme");
+            if (selectedTheme) {
+                return selectedTheme;
+            }
+            return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        };
+
+        setTheme(getInitialTheme());
+        setIsClient(true); 
+    }, []);
+
+    useEffect(() => {
+        if (isClient) {
+            document.body.className = theme;
+        }
+    }, [theme, isClient]);
 
     const changeTheme = (selectedTheme: string) => {
         setTheme(selectedTheme);
-        localStorage.setItem("theme", selectedTheme);
+        if (isClient) {
+            localStorage.setItem("theme", selectedTheme);
+        }
     };
+
+    if (!isClient) {
+        return null;
+    }
 
     return (
         <ThemeContext.Provider value={{ theme, changeTheme }}>
