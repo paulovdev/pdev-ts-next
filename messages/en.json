@@ -1,0 +1,11 @@
+{
+  "LocaleSwitcher":{
+    "title":"ASD",
+    "label":"English",
+    "locale":"English"
+  },
+    "Works": {
+      "title": "My Works",
+      "about": "Go to the about page"
+    }
+  }

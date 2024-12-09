@@ -1,6 +1,5 @@
 "use client"
 
-
 import { MotionDiv, AnimatePresenceDiv } from '@/components/motion'
 import { useState } from 'react';
 import { FaLinkedin, FaTwitter, FaGithub } from "react-icons/fa";
@@ -8,7 +7,7 @@ import { VscVerifiedFilled } from "react-icons/vsc";
 import { IoIosArrowUp } from "react-icons/io";
 import Image from 'next/image';
 
-import "./homeHeader.scss";
+import "./header.scss";
 
 export default function HomeHeader() {
     const [showMoreAbout, setShowMoreAbout] = useState(false);

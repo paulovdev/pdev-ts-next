@@ -1,5 +1,8 @@
 "use client"
 import React, { useState } from 'react';
+
+import { useTranslations } from 'next-intl';
+
 import { MotionSection } from '@/components/motion'
 import Image from 'next/image';
 import { CgClose } from 'react-icons/cg';
@@ -8,6 +11,7 @@ import { GoLinkExternal } from "react-icons/go";
 import './works.scss';
 
 export default function Works() {
+    const t = useTranslations('Works');
     const [searchTerm, setSearchTerm] = useState('');
 
     const works = [
@@ -114,11 +118,11 @@ export default function Works() {
 
     return (
         <MotionSection id='works'
-        initial={{ opacity: 0, filter: "blur(15px)" }}
-        animate={{ opacity: 1, filter: "blur(0px)" }}
-        exit={{ opacity: 0, filter: "blur(15px)" }}
-        transition={{ duration: 0.5, ease: "easeInOut" }}>
-            <h1>My Works</h1>
+            initial={{ opacity: 0, filter: "blur(15px)" }}
+            animate={{ opacity: 1, filter: "blur(0px)" }}
+            exit={{ opacity: 0, filter: "blur(15px)" }}
+            transition={{ duration: 0.5, ease: "easeInOut" }}>
+            <h1>{t('title')}</h1>
             <p>Explore my portfolio of projects spanning from 2021 to 2024.</p>
 
             <div className="filters">
@@ -149,7 +153,7 @@ export default function Works() {
                     <p>No works found matching your search criteria.</p>
                 )}
             </div>
-            
+
         </MotionSection>
     );
 }

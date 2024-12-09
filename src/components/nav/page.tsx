@@ -1,6 +1,6 @@
 'use client';
 
-import Link from "next/link";
+import { Link } from '@/i18n/routing';
 import { usePathname } from "next/navigation";
 
 import { MdHomeFilled, MdWork } from "react-icons/md";
@@ -30,8 +30,11 @@ export default function Nav() {
             <nav>
                 <ul>
                     {navLinks.map((link, index) => {
-                        // Verifica se o pathname corresponde exatamente ao href ou se começa com o href
-                        const isActive = pathname === link.href || (pathname.startsWith(link.href) && link.href !== "/");
+                        // Remove o prefixo de idioma da URL
+                        const pathWithoutLang = pathname.replace(/^\/(en|pt-br)/, '') || '/';
+                        // Verifica se o caminho extraído corresponde ao href do link
+                        const isActive = pathWithoutLang === link.href || pathWithoutLang.startsWith(link.href + '/');
+
                         return (
                             <li key={index}>
                                 <Link

@@ -1,7 +1,6 @@
 "use client"
 
 import { useState, useEffect } from 'react';
-import { FaGlobe } from "react-icons/fa";
 
 import { FaLocationDot } from "react-icons/fa6";
 import { GoClockFill } from "react-icons/go";
@@ -9,6 +8,7 @@ import { GoClockFill } from "react-icons/go";
 import ThemeChange from '../themeChange/themeChange';
 
 import "./topNav.scss";
+import LocaleSwitcher from '../locale-switcher';
 
 const TopNav = () => {
     const [time, setTime] = useState(new Date());
@@ -46,7 +46,8 @@ const TopNav = () => {
 
                     <li>
                         <div className="theme-switch">
-                            <FaGlobe />
+                           
+                            <LocaleSwitcher/>
                         </div>
                         <ThemeChange />
                     </li>
