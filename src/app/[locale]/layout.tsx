@@ -8,6 +8,7 @@ import TopNav from "@/components/topNav/page";
 import Nav from "@/components/nav/page";
 
 import "./globals.scss";
+import { Locale } from '@/i18n/routing';
 
 export const metadata: Metadata = {
   title: "paulovdev - portfolio",
@@ -19,12 +20,14 @@ export const metadata: Metadata = {
 
 export default async function RootLayout({
   children,
-  params: { locale }
+  params
 }: {
   children: React.ReactNode;
-  params: { locale: string };
+  params: { locale: Locale};
 }) {
 
+
+const {locale}=await params
   // Providing all messages to the client
   // side is the easiest way to get started
   const messages = await getMessages();
