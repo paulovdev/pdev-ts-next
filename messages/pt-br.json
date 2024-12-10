@@ -186,7 +186,15 @@
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed omnis velit suscipit est praesentium sint error nihil eum eveniet."
       },
       "7": {
-        "title": "Em breve",
+        "title": "Coming soon",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed omnis velit suscipit est praesentium sint error nihil eum eveniet."
+      },
+      "8": {
+        "title": "Coming soon",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed omnis velit suscipit est praesentium sint error nihil eum eveniet."
+      },
+      "9": {
+        "title": "Coming soon",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed omnis velit suscipit est praesentium sint error nihil eum eveniet."
       }
     }

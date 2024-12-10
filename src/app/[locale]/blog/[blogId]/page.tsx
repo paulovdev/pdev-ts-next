@@ -1,5 +1,5 @@
 import { GoArrowLeft } from "react-icons/go";
-import Link from "next/link";
+import { Link } from '@/i18n/routing';
 import { getTranslations } from 'next-intl/server';
 
 import "./blogPost.scss";
@@ -30,10 +30,10 @@ export default async function BlogServer({ params }: BlogIdQuery) {
     const miniBlogs: Blog[] = [
         {
             id: 1,
-            title: t('BlogPost.content.1.title'), 
+            title: t('BlogPost.content.1.title'),
             date: t('BlogPost.content.1.date'),
             content: [
-                t('BlogPost.content.1.content.0'), 
+                t('BlogPost.content.1.content.0'),
                 t('BlogPost.content.1.content.1'),
                 t('BlogPost.content.1.content.2')
             ]
