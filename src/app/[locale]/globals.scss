@@ -73,3 +73,8 @@ body {
   background-color: var(--bg-3);
   border-radius: .1rem;
 }
+
+option {
+  margin: 1rem;
+  border-bottom:1px solid var(--p);
+}

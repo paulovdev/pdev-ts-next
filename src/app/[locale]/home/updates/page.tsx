@@ -1,11 +1,15 @@
-import { MotionDiv } from '@/components/motion'
+"use client";
+
+import { useTranslations } from 'next-intl'; 
+import { MotionDiv } from '@/components/motion';
 import { BiBook, BiMusic } from 'react-icons/bi';
 import { MdOutlineMovie } from 'react-icons/md';
 
-import "./updates.scss";
-
+import './updates.scss';
 
 export default function HomeUpdates() {
+    const t = useTranslations('HomeUpdates'); 
+
     return (
         <MotionDiv className="home-updates"
             initial={{ opacity: 0 }}
@@ -18,30 +22,29 @@ export default function HomeUpdates() {
                 }
             }}
             viewport={{ once: true }}>
-            <h1>Updates</h1>
-            <p>What am I doing at the moment besides studying ;)</p>
+            <h1>{t('heading')}</h1> 
+            <p>{t('subheading')}</p> 
+
             <ul>
                 <li>
-                    <span><div className="icon"><BiBook /></div>Reading to:</span>
+                    <span><div className="icon"><BiBook /></div>{t('reading')}</span>
                     <div className="card-update">
-                        <p>I've got my nose in "Steal Like an Artist" by Austin Kleon. A book about the process of creativity and the value of harnessing inspiration from various sources. I find myself resonating with the idea that nothing is original and creativity is a remix of our experiences and influences. </p>
+                        <p>{t('readingDescription')}</p> 
                     </div>
                 </li>
                 <li>
-                    <span><div className="icon"><BiMusic /></div>Listening to:</span>
+                    <span><div className="icon"><BiMusic /></div>{t('listening')}</span>
                     <div className="card-update">
-                        <p>MGMT's blend of synth-pop, rock, and unconventional lyrics provide a captivating soundtrack to my creative process.</p>
+                        <p>{t('listeningDescription')}</p> 
                     </div>
                 </li>
                 <li>
-                    <span><div className="icon"><MdOutlineMovie /></div>Watching to:</span>
+                    <span><div className="icon"><MdOutlineMovie /></div>{t('watching')}</span>
                     <div className="card-update">
-                        <p>MGMT's blend of synth-pop, rock, and unconventional lyrics provide a captivating soundtrack to my creative process.</p>
+                        <p>{t('watchingDescription')}</p> 
                     </div>
                 </li>
-
             </ul>
-
-        </MotionDiv >
+        </MotionDiv>
     );
 }

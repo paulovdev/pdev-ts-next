@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
+import { notFound } from 'next/navigation';
 
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
-
+import { Locale, routing } from '@/i18n/routing';
 import { ThemeProvider } from "@/context/ThemeContext";
 import TopNav from "@/components/topNav/page";
 import Nav from "@/components/nav/page";
 
 import "./globals.scss";
-import { Locale } from '@/i18n/routing';
 
 export const metadata: Metadata = {
   title: "paulovdev - portfolio",
@@ -23,11 +23,13 @@ export default async function RootLayout({
   params
 }: {
   children: React.ReactNode;
-  params: { locale: Locale};
+  params: { locale: Locale };
 }) {
+  const { locale } = await params
 
-
-const {locale}=await params
+  if (!routing.locales.includes(locale as any)) {
+    notFound();
+  }
   // Providing all messages to the client
   // side is the easiest way to get started
   const messages = await getMessages();

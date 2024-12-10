@@ -1,9 +1,7 @@
-"use client"
+"use client";
 import React, { useState } from 'react';
-
 import { useTranslations } from 'next-intl';
-
-import { MotionSection } from '@/components/motion'
+import { MotionSection } from '@/components/motion';
 import Image from 'next/image';
 import { CgClose } from 'react-icons/cg';
 import { GoLinkExternal } from "react-icons/go";
@@ -18,8 +16,8 @@ export default function Works() {
         {
             id: 1,
             imgSrc: "/works/work-1.webp",
-            title: "Quimplo",
-            description: "Quimplo is a marketplace website for selling templates.",
+            title: t('items.0.title'),
+            description: t('items.0.description'),
             src: "https://quimplo.online",
             width: 250,
             height: 300
@@ -27,8 +25,8 @@ export default function Works() {
         {
             id: 2,
             imgSrc: "/works/work-2.webp",
-            title: "Paulin",
-            description: "Paulin is a simple minimal portfolio website.",
+            title: t('items.1.title'),
+            description: t('items.1.description'),
             src: "https://post-and-publish.netlify.app/",
             width: 250,
             height: 300
@@ -36,8 +34,8 @@ export default function Works() {
         {
             id: 3,
             imgSrc: "/works/work-3.webp",
-            title: "paulovdev",
-            description: "paulovdev is a full portfolio website.",
+            title: t('items.2.title'),
+            description: t('items.2.description'),
             src: "https://paulovdev.framer.website/",
             width: 250,
             height: 300
@@ -45,8 +43,8 @@ export default function Works() {
         {
             id: 4,
             imgSrc: "/works/work-4.webp",
-            title: "The Batman",
-            description: "ShopEase is an e-commerce platform for easy online shopping.",
+            title: t('items.3.title'),
+            description: t('items.3.description'),
             src: "https://shopease.example.com",
             width: 250,
             height: 300
@@ -54,8 +52,8 @@ export default function Works() {
         {
             id: 5,
             imgSrc: "/works/work-5.webp",
-            title: "Meow Café",
-            description: "DevPortfolio is a sleek and modern portfolio for developers.",
+            title: t('items.4.title'),
+            description: t('items.4.description'),
             src: "https://devportfolio.example.com",
             width: 250,
             height: 300
@@ -63,8 +61,8 @@ export default function Works() {
         {
             id: 6,
             imgSrc: "/works/work-3.webp",
-            title: "Coming soon",
-            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed omnis velit suscipit est praesentium sint error nihil eum eveniet.",
+            title: t('items.5.title'),
+            description: t('items.5.description'),
             src: "https://creativehub.example.com",
             width: 250,
             height: 300
@@ -72,8 +70,8 @@ export default function Works() {
         {
             id: 7,
             imgSrc: "/works/work-3.webp",
-            title: "Coming soon",
-            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed omnis velit suscipit est praesentium sint error nihil eum eveniet.",
+            title: t('items.6.title'),
+            description: t('items.6.description'),
             src: "https://eduplatform.example.com",
             width: 250,
             height: 300
@@ -81,8 +79,8 @@ export default function Works() {
         {
             id: 8,
             imgSrc: "/works/work-3.webp",
-            title: "Coming soon",
-            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed omnis velit suscipit est praesentium sint error nihil eum eveniet.",
+            title: t('items.7.title'),
+            description: t('items.7.description'),
             src: "https://healthcarepro.example.com",
             width: 250,
             height: 300
@@ -90,8 +88,8 @@ export default function Works() {
         {
             id: 9,
             imgSrc: "/works/work-3.webp",
-            title: "Coming soon",
-            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed omnis velit suscipit est praesentium sint error nihil eum eveniet.",
+            title: t('items.8.title'),
+            description: t('items.8.description'),
             src: "https://travelbuddy.example.com",
             width: 250,
             height: 300
@@ -99,8 +97,8 @@ export default function Works() {
         {
             id: 10,
             imgSrc: "/works/work-3.webp",
-            title: "Coming soon",
-            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed omnis velit suscipit est praesentium sint error nihil eum eveniet.",
+            title: t('items.9.title'),
+            description: t('items.9.description'),
             src: "https://artgallery.example.com",
             width: 250,
             height: 300
@@ -123,12 +121,12 @@ export default function Works() {
             exit={{ opacity: 0, filter: "blur(15px)" }}
             transition={{ duration: 0.5, ease: "easeInOut" }}>
             <h1>{t('title')}</h1>
-            <p>Explore my portfolio of projects spanning from 2021 to 2024.</p>
+            <p>{t('description')}</p>
 
             <div className="filters">
                 <input
                     type="text"
-                    placeholder="Search by title or description..."
+                    placeholder={t('searchPlaceholder')}
                     value={searchTerm}
                     onChange={e => setSearchTerm(e.target.value)}
                 />
@@ -150,10 +148,9 @@ export default function Works() {
                         </a>
                     ))
                 ) : (
-                    <p>No works found matching your search criteria.</p>
+                    <p>{t('noWorksFound')}</p>
                 )}
             </div>
-
         </MotionSection>
     );
 }

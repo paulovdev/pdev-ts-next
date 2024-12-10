@@ -1,11 +1,194 @@
 {
-  "LocaleSwitcher":{
-    "title":"ASD",
-    "label":"Português",
-    "locale":"Português"
+  "LocaleSwitcher": {
+    "title": "ASD",
+    "label": "Inglês",
+    "locale": "Inglês"
   },
-    "Works": {
-      "title": "Meu trabalhos",
-      "about": "Ir para pagina sobre"
+  "HomeHeader": {
+    "name": "Paulo Vitor",
+    "availableForWorks": "Disponível para novos trabalhos.",
+    "description": "Desenvolvedor front-end e designer UX/UI, especializado em criar experiências de usuário imersivas e intuitivas, sempre ultrapassando os limites da inovação no design.",
+    "moreAbout": {
+      "p1": "Como falamos, sou um desenvolvedor front-end apaixonado por música e jogos. Além de criar interfaces incríveis para a web, também dedico meu tempo livre à produção de música e ao mundo dos jogos.",
+      "p2": "Adoro trabalhar em projetos desafiadores e me aprofundar em textos longos e envolventes. Minha criatividade e habilidades técnicas me permitem criar experiências digitais únicas e cativantes para os usuários. Sempre busco aprimorar minhas habilidades e me manter atualizado com as últimas tendências do desenvolvimento web."
+    },
+    "signature": "Paulo Vitor Pimentel dos Santos",
+    "moreAboutButton": "Mais sobre mim"
+  },
+  "HomeWorks": {
+    "heading": "Trabalhos recentes",
+    "subheading": "Explore meus trabalhos recentes e os que ainda estou trabalhando",
+    "work1": {
+      "title": "Quimplo",
+      "description": "Quimplo é um site de marketplace para venda de templates."
+    },
+    "work2": {
+      "title": "Paulin",
+      "description": "Paulin é um site minimalista e simples de portfólio."
+    },
+    "work3": {
+      "title": "paulovdev",
+      "description": "paulovdev é um site completo de portfólio."
+    }
+  },
+  "HomeExperience": {
+    "heading": "Experiência",
+    "subheading": "Minhas experiências desde que comecei a estudar programação",
+    "exp1": {
+      "company": "Anhanguera",
+      "role": "Engenheiro de Software"
+    },
+    "exp2": {
+      "company": "Elevadores Salta",
+      "role": "Técnico em Elétrica"
+    },
+    "exp3": {
+      "company": "Freelance",
+      "role": "Desenvolvedor Front-end"
+    },
+    "exp4": {
+      "company": "Rocketseat",
+      "role": "Curso Ignite"
+    },
+    "bornIn": "Nascido em 2003"
+  },
+  "HomeStack": {
+    "heading": "Tecnologias",
+    "subheading": "Ferramentas que sempre uso em quase todos os meus trabalhos",
+    "react": {
+      "title": "React",
+      "subTitle": "Biblioteca JavaScript para interfaces"
+    },
+    "firebase": {
+      "title": "Firebase",
+      "subTitle": "Plataforma de apps do Google"
+    },
+    "notion": {
+      "title": "Notion",
+      "subTitle": "Espaço de trabalho tudo-em-um"
+    },
+    "figma": {
+      "title": "Figma",
+      "subTitle": "Plataforma de design"
+    },
+    "vsCode": {
+      "title": "VS Code",
+      "subTitle": "Editor de código"
+    },
+    "chatGpt": {
+      "title": "Open AI",
+      "subTitle": "Linguagem alimentada por IA"
+    }
+  },
+  "HomeSetup": {
+    "heading": "Configuração",
+    "subheading": "Aqui estão os principais equipamentos que uso na minha configuração.",
+    "showMore": "Mostrar mais",
+    "category": {
+      "All": "Todos",
+      "Components": "Componentes",
+      "Peripherals": "Periféricos",
+      "Network": "Rede",
+      "Furniture": "Móveis",
+      "Accessories": "Acessórios"
+    },
+    "cpu": "Processador",
+    "cpuDescription": "Intel Core i7-12700K, 3.6GHz, 12 núcleos, 20 threads",
+    "ram": "Memória RAM",
+    "ramDescription": "Team Group T-Force Vulcan Pichau, (2x32GB)",
+    "graphicsCard": "Placa de Vídeo",
+    "graphicsCardDescription": "RX 6600 CLD 8GB ASRock AMD Radeon",
+    "motherboard": "Placa Mãe",
+    "motherboardDescription": "ASUS Prime H610M-E D4 LGA 1700",
+    "storage": "Armazenamento",
+    "storageDescription": "SSD NVME 2 SSD 480GB XrayDisk",
+    "mouse": "Mouse",
+    "mouseDescription": "Logitech G Pro",
+    "keyboard": "Teclado",
+    "keyboardDescription": "Logitech G Pro",
+    "monitor": "Monitor",
+    "monitorDescription": "AOC 21.5\" LED Full HD",
+    "case": "Gabinete",
+    "caseDescription": "Pichau HX300 Glass",
+    "headset": "Headset",
+    "headsetDescription": "Havit, 50mm",
+    "lineFilter": "Filtro de Linha",
+    "lineFilterDescription": "DPS Clamper Energy 8 Black, 013000",
+    "gamerCabinet": "Gabinete Gamer",
+    "gamerCabinetDescription": "Pichau HX300 Glass Black, PG-HX3-G01",
+    "coolerProcessor": "Cooler para Processador",
+    "coolerProcessorDescription": "Cooler Master Hyper H410R 92mm Red Led, RR-H410-20PK-R1",
+    "gamerChair": "Cadeira Gamer",
+    "gamerChairDescription": "TGT Heron TX, Preto e Cinza, TGT-HRTX-BK01",
+    "speakers": "Caixas de Som",
+    "speakersDescription": "Logitech Z333",
+    "webcam": "Webcam",
+    "webcamDescription": "Logitech C920",
+    "powerSupply": "Fonte de Alimentação",
+    "powerSupplyDescription": "Corsair CV550, 550W",
+    "extraStorage": "Armazenamento Extra",
+    "extraStorageDescription": "Seagate 2TB HDD Externo",
+    "router": "Roteador",
+    "routerDescription": "TP-Link Archer C6",
+    "microphone": "Microfone",
+    "microphoneDescription": "Microfone USB Blue Yeti",
+    "vrHeadset": "Headset VR",
+    "vrHeadsetDescription": "Oculus Rift S",
+    "all": "All",
+    "components": "Components",
+    "peripherals": "Peripherals",
+    "network": "Network",
+    "furniture": "Furniture",
+    "accessories": "Accessories"
+  },
+  "HomeUpdates": {
+    "heading": "Atualizações",
+    "subheading": "O que estou fazendo no momento além de estudar ;)",
+    "reading": "Lendo:",
+    "readingDescription": "Estou lendo 'Roube como um Artista' de Austin Kleon. Um livro sobre o processo criativo e o valor de aproveitar a inspiração de várias fontes. Eu me identifico com a ideia de que nada é original, e a criatividade é um remix de nossas experiências e influências.",
+    "listening": "Ouvindo:",
+    "listeningDescription": "A mistura de synth-pop, rock e letras não convencionais do MGMT cria uma trilha sonora cativante para o meu processo criativo.",
+    "watching": "Assistindo:",
+    "watchingDescription": "Matrix, um filme que explora a realidade, a tecnologia e a liberdade humana. Ele desafia o conceito do que é real e o que é ilusão."
+  },
+  "Works": {
+    "title": "Meus Trabalhos",
+    "description": "Explore meu portfólio de projetos de 2021 a 2024.",
+    "searchPlaceholder": "Pesquisar por título ou descrição...",
+    "noWorksFound": "Nenhum trabalho encontrado com os critérios de busca.",
+    "items": {
+      "0": {
+        "title": "Quimplo",
+        "description": "Quimplo é um site de marketplace para venda de templates."
+      },
+      "1": {
+        "title": "Paulin",
+        "description": "Paulin é um site minimalista e simples de portfólio."
+      },
+      "2": {
+        "title": "paulovdev",
+        "description": "paulovdev é um site completo de portfólio."
+      },
+      "3": {
+        "title": "The Batman",
+        "description": "ShopEase é uma plataforma de e-commerce para compras online fáceis."
+      },
+      "4": {
+        "title": "Meow Café",
+        "description": "DevPortfolio é um portfólio moderno e elegante para desenvolvedores."
+      },
+      "5": {
+        "title": "Em breve",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed omnis velit suscipit est praesentium sint error nihil eum eveniet."
+      },
+      "6": {
+        "title": "Em breve",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed omnis velit suscipit est praesentium sint error nihil eum eveniet."
+      },
+      "7": {
+        "title": "Em breve",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed omnis velit suscipit est praesentium sint error nihil eum eveniet."
+      }
     }
   }
+}

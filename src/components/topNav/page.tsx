@@ -6,11 +6,13 @@ import { FaLocationDot } from "react-icons/fa6";
 import { GoClockFill } from "react-icons/go";
 
 import ThemeChange from '../themeChange/themeChange';
+import { useLocale } from "next-intl"
 
 import "./topNav.scss";
-import LocaleSwitcher from '../locale-switcher';
+import LocaleSwitcherSelect from '../locale-switcher-select';
 
 const TopNav = () => {
+    const locale = useLocale()
     const [time, setTime] = useState(new Date());
 
     useEffect(() => {
@@ -46,8 +48,8 @@ const TopNav = () => {
 
                     <li>
                         <div className="theme-switch">
-                           
-                            <LocaleSwitcher/>
+
+                            <LocaleSwitcherSelect defaultValue={locale} />
                         </div>
                         <ThemeChange />
                     </li>
