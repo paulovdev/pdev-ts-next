@@ -18,18 +18,14 @@ export const metadata: Metadata = {
   },
 };
 
+
 export default async function RootLayout({
   children,
-  params
+  params: { locale }
 }: {
   children: React.ReactNode;
   params: { locale: Locale };
 }) {
-  const { locale } = await params
-
-  if (!routing.locales.includes(locale as Locale)) {
-    notFound();
-  }
   // Providing all messages to the client
   // side is the easiest way to get started
   const messages = await getMessages();
