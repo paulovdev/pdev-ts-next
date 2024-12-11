@@ -9,7 +9,7 @@ import ThemeChange from '../themeChange/themeChange';
 import { useLocale } from "next-intl"
 
 import "./topNav.scss";
-import LocaleSwitcherSelect from '../locale-switcher-select';
+import LangChange from '../LangChange/LangChange';
 
 const TopNav = () => {
     const locale = useLocale()
@@ -48,7 +48,7 @@ const TopNav = () => {
 
                     <li>
                        
-                            <LocaleSwitcherSelect defaultValue={locale} />
+                            <LangChange defaultValue={locale} />
                         
                         <ThemeChange />
                     </li>
