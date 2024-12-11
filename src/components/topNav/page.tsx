@@ -47,10 +47,9 @@ const TopNav = () => {
                     </li>
 
                     <li>
-                        <div className="theme-switch">
-
+                       
                             <LocaleSwitcherSelect defaultValue={locale} />
-                        </div>
+                        
                         <ThemeChange />
                     </li>
                 </ul>

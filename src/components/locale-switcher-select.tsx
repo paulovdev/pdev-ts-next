@@ -27,22 +27,22 @@ export default function LocaleSwitcherSelect({ defaultValue }: Props) {
   const [themeToggle, setThemeToggle] = useState(false)
 
 
-  return (
+  return (<>
     <div className="theme-switch" onClick={() => setThemeToggle(!themeToggle)}>
       <IoLanguage />
-
-      <select
-        className={themeToggle ? "active" : ""}
-        defaultValue={defaultValue}
-        onChange={onSelectChange}
-      >
-        {routing.locales.map(lang => (
-          <option className="option-item" key={lang} value={lang}>
-            {lang}
-          </option>
-        ))}
-      </select>
-
     </div>
+
+    <select
+      className={themeToggle ? "active" : ""}
+      defaultValue={defaultValue}
+      onChange={onSelectChange}
+    >
+      {routing.locales.map(lang => (
+        <option className="option-item" key={lang} value={lang}>
+          {lang}
+        </option>
+      ))}
+    </select>
+  </>
   );
 }
