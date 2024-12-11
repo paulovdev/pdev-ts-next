@@ -76,5 +76,41 @@ body {
 
 option {
   margin: 1rem;
-  border-bottom:1px solid var(--p);
+  border-bottom: 1px solid var(--p);
+}
+
+select {
+  position:relative;
+  display: none;
+  top:50px;
+
+  &.active{
+    display:block;
+  }
+}
+
+.theme-switch {
+  width: 40px;
+  height: 40px;
+
+  padding: .1rem;
+
+  border-radius: 100%;
+  border: 1px solid var(--border);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  svg {
+    font-size: 18px !important;
+    color: var(--p);
+  }
+
+}
+
+.theme-switch {
+  border: 1px solid var(--border);
 }
