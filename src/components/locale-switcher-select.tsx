@@ -1,5 +1,6 @@
+"use client"
 import { useParams } from 'next/navigation';
-import { Locale, routing, usePathname, useRouter } from '@/i18n/routing';
+import { routing, usePathname, useRouter } from '@/i18n/routing';
 
 type Props = {
   defaultValue: string;
@@ -18,7 +19,7 @@ export default function LocaleSwitcherSelect({ defaultValue }: Props) {
       // are used in combination with a given `pathname`. Since the two will
       // always match for the current route, we can skip runtime checks.
       { pathname, params },
-      { locale: value as Locale }
+      { locale: value }
     );
   };
 
