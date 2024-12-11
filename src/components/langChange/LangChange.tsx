@@ -25,13 +25,17 @@ export default function LangChange({ defaultValue }: Props) {
       { pathname, params },
       { locale: value }
     );
+
   };
 
   return (
     <>
       <div className="theme-switch" onClick={() => setThemeToggle(!themeToggle)}>
         <IoLanguage />
+
       </div>
+      
+      <div style={{ display: "none" }}>{selectedValue}</div>
 
       <div className={`dropdown-options ${themeToggle ? "active" : ""}`}>
         {routing.locales.map(lang => (
@@ -41,6 +45,7 @@ export default function LangChange({ defaultValue }: Props) {
             onClick={() => onSelectChange(lang)}
           >
             {lang}
+
           </div>
         ))}
       </div>

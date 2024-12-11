@@ -1,6 +1,6 @@
 "use client";
 
-import { useTranslations } from 'next-intl'; 
+import { useTranslations } from 'next-intl';
 import { useState } from 'react';
 import { FaLinkedin, FaTwitter, FaGithub } from "react-icons/fa";
 import { VscVerifiedFilled } from "react-icons/vsc";
@@ -12,7 +12,7 @@ import "./header.scss";
 
 export default function HomeHeader() {
     const [showMoreAbout, setShowMoreAbout] = useState(false);
-    const t = useTranslations('HomeHeader'); 
+    const t = useTranslations('HomeHeader');
 
     return (
         <MotionDiv className="home-header"
@@ -23,14 +23,14 @@ export default function HomeHeader() {
         >
             <div className="profile-content">
                 <div className="l-content">
-                    <Image src="/photo.webp" width={125} height={125} alt="profile-photo" />
+                    <Image src="/photo.webp" width={125} height={125} quality={100} priority={true} alt="profile-photo" />
                 </div>
                 <div className="r-content">
-                    <h1>{t('name')} <VscVerifiedFilled /></h1> 
+                    <h1>{t('name')} <VscVerifiedFilled /></h1>
 
                     <div className="available-for-works">
                         <div className="ball-green"></div>
-                        {t('availableForWorks')} 
+                        {t('availableForWorks')}
                     </div>
 
                     <div className="icon-content">
@@ -48,7 +48,7 @@ export default function HomeHeader() {
             </div>
 
             <div className="more-about">
-                <h2>{t('description')}</h2> 
+                <h2>{t('description')}</h2>
 
                 <AnimatePresenceDiv>
                     {showMoreAbout && (
@@ -58,16 +58,16 @@ export default function HomeHeader() {
                             exit={{ opacity: 0, y: -10, filter: "blur(15px)" }}
                             transition={{ duration: 0.3, ease: "easeInOut" }}
                         >
-                            <p>{t('moreAbout.p1')}</p> 
-                            <p>{t('moreAbout.p2')}</p> 
-                            <span>{t('signature')}</span> 
+                            <p>{t('moreAbout.p1')}</p>
+                            <p>{t('moreAbout.p2')}</p>
+                            <span>{t('signature')}</span>
                         </MotionDiv>
                     )}
                 </AnimatePresenceDiv>
 
                 <button onClick={() => setShowMoreAbout(!showMoreAbout)} className={!showMoreAbout ? "active" : ""}>
                     {t('moreAboutButton')} <IoIosArrowUp />
-                </button> 
+                </button>
             </div>
         </MotionDiv>
     );
