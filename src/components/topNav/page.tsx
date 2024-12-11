@@ -9,7 +9,7 @@ import ThemeChange from '../themeChange/themeChange';
 import { useLocale } from "next-intl"
 
 import "./topNav.scss";
-import LangChange from '../LangChange/LangChange';
+import LangChange from '../langChange/LangChange';
 
 const TopNav = () => {
     const locale = useLocale()
