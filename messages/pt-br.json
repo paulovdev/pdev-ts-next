@@ -7,10 +7,10 @@
   "HomeHeader": {
     "name": "Paulo Vitor",
     "availableForWorks": "Disponível para novos trabalhos.",
-    "description": "Desenvolvedor front-end e designer UX/UI, especializado em criar experiências de usuário imersivas e intuitivas, sempre ultrapassando os limites da inovação no design.",
+    "description": "Desenvolvedor front-end & Designer UX/UI, especializado em criar experiências de usuário imersivas e intuitivas, sempre superando os limites da inovação no design.",
     "moreAbout": {
-      "p1": "Como falamos, sou um desenvolvedor front-end apaixonado por música e jogos. Além de criar interfaces incríveis para a web, também dedico meu tempo livre à produção de música e ao mundo dos jogos.",
-      "p2": "Adoro trabalhar em projetos desafiadores e me aprofundar em textos longos e envolventes. Minha criatividade e habilidades técnicas me permitem criar experiências digitais únicas e cativantes para os usuários. Sempre busco aprimorar minhas habilidades e me manter atualizado com as últimas tendências do desenvolvimento web."
+      "p1": "Como conversamos, sou um desenvolvedor front-end apaixonado por música e jogos. Além de criar interfaces incríveis para a web, também dedico meu tempo livre para produzir música e explorar o mundo dos jogos.",
+      "p2": "Adoro trabalhar em projetos desafiadores e me aprofundar em textos longos e envolventes. Minha criatividade e habilidades técnicas me permitem criar experiências digitais únicas e cativantes para os usuários. Sempre busco melhorar minhas habilidades e me manter atualizado com as últimas tendências no mundo do desenvolvimento web."
     },
     "signature": "Paulo Vitor Pimentel dos Santos",
     "moreAboutButton": "Mais sobre mim"
@@ -24,7 +24,7 @@
     },
     "work2": {
       "title": "Paulin",
-      "description": "Paulin é um site minimalista e simples de portfólio."
+      "description": "Paulin é um site de portfólio minimalista e simples."
     },
     "work3": {
       "title": "paulovdev",
@@ -40,10 +40,10 @@
     },
     "exp2": {
       "company": "Elevadores Salta",
-      "role": "Técnico em Elétrica"
+      "role": "Técnico em Eletromecânica"
     },
     "exp3": {
-      "company": "Freelance",
+      "company": "Freelancer",
       "role": "Desenvolvedor Front-end"
     },
     "exp4": {
@@ -54,14 +54,14 @@
   },
   "HomeStack": {
     "heading": "Tecnologias",
-    "subheading": "Ferramentas que sempre uso em quase todos os meus trabalhos",
+    "subheading": "Ferramentas que eu sempre uso em quase todos os meus trabalhos",
     "react": {
       "title": "React",
       "subTitle": "Biblioteca JavaScript para interfaces"
     },
     "firebase": {
       "title": "Firebase",
-      "subTitle": "Plataforma de apps do Google"
+      "subTitle": "Plataforma de aplicativos do Google"
     },
     "notion": {
       "title": "Notion",
@@ -77,12 +77,12 @@
     },
     "chatGpt": {
       "title": "Open AI",
-      "subTitle": "Linguagem alimentada por IA"
+      "subTitle": "Linguagem impulsionada por IA"
     }
   },
   "HomeSetup": {
-    "heading": "Configuração",
-    "subheading": "Aqui estão os principais equipamentos que uso na minha configuração.",
+    "heading": "Setup",
+    "subheading": "Aqui você encontrará os principais equipamentos que uso no meu setup.",
     "showMore": "Mostrar mais",
     "category": {
       "All": "Todos",
@@ -94,11 +94,11 @@
     },
     "cpu": "Processador",
     "cpuDescription": "Intel Core i7-12700K, 3.6GHz, 12 núcleos, 20 threads",
-    "ram": "Memória RAM",
+    "ram": "RAM",
     "ramDescription": "Team Group T-Force Vulcan Pichau, (2x32GB)",
     "graphicsCard": "Placa de Vídeo",
     "graphicsCardDescription": "RX 6600 CLD 8GB ASRock AMD Radeon",
-    "motherboard": "Placa Mãe",
+    "motherboard": "Placa-mãe",
     "motherboardDescription": "ASUS Prime H610M-E D4 LGA 1700",
     "storage": "Armazenamento",
     "storageDescription": "SSD NVME 2 SSD 480GB XrayDisk",
@@ -145,9 +145,9 @@
     "heading": "Atualizações",
     "subheading": "O que estou fazendo no momento além de estudar ;)",
     "reading": "Lendo:",
-    "readingDescription": "Estou lendo 'Roube como um Artista' de Austin Kleon. Um livro sobre o processo criativo e o valor de aproveitar a inspiração de várias fontes. Eu me identifico com a ideia de que nada é original, e a criatividade é um remix de nossas experiências e influências.",
+    "readingDescription": "Estou com o nariz em 'Steal Like an Artist' de Austin Kleon. Um livro sobre o processo criativo e o valor de aproveitar a inspiração de várias fontes. Eu me identifico com a ideia de que nada é original e a criatividade é um remix de nossas experiências e influências.",
     "listening": "Ouvindo:",
-    "listeningDescription": "A mistura de synth-pop, rock e letras não convencionais do MGMT cria uma trilha sonora cativante para o meu processo criativo.",
+    "listeningDescription": "A mistura de synth-pop, rock e letras inconvencionais do MGMT fornece uma trilha sonora cativante para o meu processo criativo.",
     "watching": "Assistindo:",
     "watchingDescription": "Matrix, um filme que explora a realidade, a tecnologia e a liberdade humana. Ele desafia o conceito do que é real e o que é ilusão."
   },
@@ -155,7 +155,7 @@
     "title": "Meus Trabalhos",
     "description": "Explore meu portfólio de projetos de 2021 a 2024.",
     "searchPlaceholder": "Pesquisar por título ou descrição...",
-    "noWorksFound": "Nenhum trabalho encontrado com os critérios de busca.",
+    "noWorksFound": "Nenhum trabalho encontrado que corresponda aos seus critérios de pesquisa.",
     "items": {
       "0": {
         "title": "Quimplo",
@@ -163,7 +163,7 @@
       },
       "1": {
         "title": "Paulin",
-        "description": "Paulin é um site minimalista e simples de portfólio."
+        "description": "Paulin é um site de portfólio minimalista e simples."
       },
       "2": {
         "title": "paulovdev",
@@ -186,17 +186,80 @@
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed omnis velit suscipit est praesentium sint error nihil eum eveniet."
       },
       "7": {
-        "title": "Coming soon",
+        "title": "Em breve",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed omnis velit suscipit est praesentium sint error nihil eum eveniet."
       },
       "8": {
-        "title": "Coming soon",
+        "title": "Em breve",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed omnis velit suscipit est praesentium sint error nihil eum eveniet."
       },
       "9": {
-        "title": "Coming soon",
+        "title": "Em breve",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed omnis velit suscipit est praesentium sint error nihil eum eveniet."
       }
     }
+  },
+  "Blog": {
+    "title": "Blog",
+    "description": "Desbloqueando os segredos do sucesso: Histórias, estratégias e motivação.",
+    "articles": {
+      "1": {
+        "title": "A Arte do Design Centrado no Usuário",
+        "date": "8 de Mar, 2024"
+      },
+      "2": {
+        "title": "Maximizando a Eficiência com Automação",
+        "date": "12 de Mar, 2024"
+      },
+      "3": {
+        "title": "Construindo uma Identidade de Marca Forte",
+        "date": "18 de Mar, 2024"
+      }
+    }
+  },
+  "BlogPost": {
+    "backToBlogs": "Voltar para os Blogs",
+    "content": {
+      "1": {
+        "title": "Design Centrado no Usuário",
+        "date": "8 de Mar, 2024",
+        "content": [
+          "O design centrado no usuário foca em atender às necessidades dos usuários, priorizando usabilidade, acessibilidade e experiência emocional em vez de estética. O processo começa com pesquisa, como enquetes e testes de usabilidade, para obter insights e criar personas de usuários—representações realistas do público-alvo.",
+          "Com as personas, é possível mapear a jornada do usuário, identificando pontos de fricção e oportunidades de melhoria. A acessibilidade é fundamental, garantindo compatibilidade com leitores de tela, fornecendo alternativas textuais para imagens e otimizando a navegação para diferentes dispositivos.",
+          "O processo iterativo é essencial. Após o lançamento, o feedback contínuo dos usuários guia refinamentos, garantindo que o design evolua para atender às suas necessidades."
+        ]
+      },
+      "2": {
+        "title": "Maximizando a Eficiência",
+        "date": "12 de Mar, 2024",
+        "content": [
+          "A automação aumenta a eficiência ao reduzir o tempo gasto com tarefas repetitivas, permitindo mais foco em trabalhos estratégicos e criativos. No marketing, ferramentas como Mailchimp e HubSpot automatizam campanhas e personalizam conteúdo, entregando a mensagem certa no momento certo com o mínimo de esforço.",
+          "O suporte ao cliente também se beneficia da automação com chatbots e sistemas de ticket que resolvem problemas comuns rapidamente. Ferramentas de gerenciamento de projetos como Trello e Asana automatizam atribuições de tarefas e lembretes de prazos, ajudando as equipes a se manterem organizadas.",
+          "Ferramentas pessoais de automação como Zapier e IFTTT agilizam tarefas diárias, como organização de e-mails e backups. Identificar tarefas repetitivas e escolher as ferramentas certas para automação pode maximizar a eficiência tanto no trabalho quanto na vida pessoal."
+        ]
+      },
+      "3": {
+        "title": "Construindo a Identidade da Marca",
+        "date": "18 de Mar, 2024",
+        "content": [
+          "A identidade da marca é a combinação de elementos visuais, verbais e emocionais que moldam a percepção do seu negócio. Para construir uma identidade forte, comece com um propósito claro—entendendo o que sua marca representa e como você quer que os clientes se sintam ao interagir com ela.",
+          "A identidade visual inclui seu logotipo, paleta de cores, tipografia e imagens. Esses elementos devem evocar emoções e criar reconhecimento, criando uma aparência coesa e atemporal.",
+          "A voz da sua marca deve alinhar-se à sua identidade visual, mantendo consistência em todos os canais de comunicação, desde as redes sociais até o atendimento ao cliente. A consistência gera confiança com seu público.",
+          "Por fim, a experiência do usuário desempenha um papel crucial. Como os clientes se sentem ao interagir com seu produto ou serviço fortalece a conexão emocional, fomentando a lealdade à marca e o crescimento a longo prazo."
+        ]
+      }
+    }
+  },
+  "Contact": {
+    "heading": "Entre em contato.",
+    "description": "Tem uma ideia para um site ou aplicativo móvel, ou precisa de algumas dicas sobre design de produto? Não hesite em entrar em contato. Minha agenda se enche rápido, então quanto mais cedo você entrar em contato, melhor para ambos.",
+    "email": "E-mail",
+    "call": "Ligar",
+    "namePlaceholder": "Nome",
+    "emailPlaceholder": "E-mail",
+    "messagePlaceholder": "Mensagem",
+    "sendButton": "Enviar",
+    "responseTime": "Tempo médio de resposta:",
+    "avgResponse": "24 horas"
   }
 }
